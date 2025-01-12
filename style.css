@@ -7,7 +7,7 @@ body {
 }
 
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   body {
     font-size: 16px;
   }
@@ -19,8 +19,8 @@ body {
   }
   .nav {
     flex-direction: column; /* Jei meniu yra horizontalus, padaryti jį vertikaliu */
-  }
-}
+  /* } */
+/* } */ 
 /* navigacija */
 
 
@@ -166,8 +166,8 @@ header {
 
   .Stulpelis h2 {
     /* color: #002366; */
-    font-weight: bold;
-    color: #333; /* Teksto spalva */
+  font-weight: bold;
+  color: #333; /* Teksto spalva */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Šešėlio efektas */
   font-size: 2rem; /* Šrifto dydis */
   font-family: Arial, sans-serif; /* Šriftas */
@@ -279,7 +279,7 @@ text-align: center;
   text-align: center; /* Išcentrina tekstą viduje elemento */
   /* margin: 10px 0; */
   
-} 
+
 
 
 .columnnn {
@@ -294,9 +294,9 @@ text-align: center;
     transition: background-color 0.3s ease-in-out;
     background-color: #fff; /* Nustatome pradinę fono spalvą (balta) */
 }
+
 img {
-    
-  
+      
   /* display: flex; */
   /* flex: 1; */
   /* flex-direction: column; */
@@ -371,11 +371,11 @@ img:hover {
     flex: 1;
     flex-direction: column;
     padding: 20px;
-    background: #f4efeff0;
+    /* background: #f4efeff0; */
     display: flex;
     align-items: center;
     min-height: 40vh; /* Užima visą ekrano aukštį */
-    width: 98%;
+    width: 96%;
 }
 
 
@@ -386,7 +386,7 @@ img:hover {
 .testimonials {
     display: flex;
     justify-content: space-around;
-    justify-content: space-between; Elementai bus išdėstyti tolygiai
+    justify-content: space-between;
 }
 
 .testimonial {
@@ -449,7 +449,7 @@ img:hover {
     color: #1e0d89;
     max-width: 50%;
   margin: 0 auto;
-  justify-content: space-between
+  justify-content: space-between;
     /* max-width: 100px; Pakeiskite vertę pagal poreikį */
     /* margin: 0 auto; Centruoja tekstą konteineryje */
 }
@@ -511,9 +511,6 @@ button {
     background-color: #0e2fc3;
     color: white;
     cursor: pointer;
-
-
-
 }
 /* pabaiga */
 
