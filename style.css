@@ -667,38 +667,72 @@ footer {
 
 
 @media (max-width: 320px) {
-  .body {
+  section {
     max-width: 95%;
     display: flex;
     flex-direction: column;
     grid-template-columns: 1fr;
   }
-    .conteineriukas {
-      grid-template-columns: 1fr; /* Mobiliuose įrenginiuose viena kolona */
+  body {
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .containerr{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr; 
+    max-width: 95%;
+  }
+
+
+  .conteineriukas {
+      
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+      max-width: 95%; /* Mobiliuose įrenginiuose viena kolona */
     }
 
-    .columnnn {
+    /* .columnnn {
       display: flex;
       flex-direction: column;
       grid-template-columns: 1fr;
-    }
+    } */
 
-    .columnn {
+    /* .columnn {
       display: flex;
       flex-direction: column; 
       grid-template-columns: 1fr;
-    }
-    .containeris {
+    } */
+  .containeris {
       display: flex;
       flex-direction: column;
       grid-template-columns: 1fr;
+      max-width: 95%;
     }
 
-    .roww {
+    footer {
       display: flex;
       flex-direction: column;
       grid-template-columns: 1fr;
+      max-width: 95%; 
     }
+
+    head {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 1fr; 
+      max-width: 95%;
+    }
+
+    /* .roww {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+    } */
   }
 
   
