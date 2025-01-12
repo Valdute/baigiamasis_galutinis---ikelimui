@@ -666,73 +666,18 @@ footer {
   /* } */ 
 
 
-@media (max-width: 320px) {
-  section {
-    max-width: 95%;
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-  }
-  body {
-    max-width: 95%;
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-  }
-
-  .containerr{
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr; 
-    max-width: 95%;
-  }
-
-
-  .conteineriukas {
-      
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-      max-width: 95%; /* Mobiliuose įrenginiuose viena kolona */
+  @media (max-width: 320px) {
+    .container {
+        width: 95%; /* Padidiname plotį, kad geriau tilptų mažame ekrane */
     }
-
-    /* .columnnn {
-      display: flex;
-      flex-direction: column;
-      grid-template-columns: 1fr;
-    } */
-
-    /* .columnn {
-      display: flex;
-      flex-direction: column; 
-      grid-template-columns: 1fr;
-    } */
-  .containeris {
-      display: flex;
-      flex-direction: column;
-      grid-template-columns: 1fr;
-      max-width: 95%;
+  
+    .columnn {
+        flex-direction: column; /* Keičiame išdėstymą į vertikalią koloną */
     }
-
-    footer {
-      display: flex;
-      flex-direction: column;
-      grid-template-columns: 1fr;
-      max-width: 95%; 
+  
+    .image {
+        width: 100%; /* Vaizdas užima visą eilutės plotį */
     }
-
-    head {
-      display: flex;
-      flex-direction: column;
-      grid-template-columns: 1fr; 
-      max-width: 95%;
-    }
-
-    /* .roww {
-      display: flex;
-      flex-direction: column;
-      grid-template-columns: 1fr;
-    } */
   }
 
   
