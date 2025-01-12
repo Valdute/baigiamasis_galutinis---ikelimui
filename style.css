@@ -1,0 +1,669 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+@media (max-width: 320px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 90%;
+  }
+  .image {
+    width: 100%;
+  }
+  .nav {
+    flex-direction: column; /* Jei meniu yra horizontalus, padaryti jį vertikaliu */
+  }
+}
+/* navigacija */
+
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* juros paveiksliukas */
+header {
+    background-image: url('jura.jpg');
+    background-size: cover;
+    background-position: center;
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.logo {
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  color: #1118e5;
+}
+
+.sign-in {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.sign-in:hover {
+  background-color: #3e8e41; /* Slightly darker green on hover */
+  transform: translateY(-2px); /* Small vertical movement */
+}
+
+h1 {
+    font-size: 3rem; /* Pakeisk dydį pagal poreikį */
+    font-weight: bold;
+    color: rgb(228, 14, 14);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Pridėtas šešėlis */
+}
+
+p {
+    color: rgb(247, 25, 25);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    /* background-image: url('jura.jpg'); */
+}
+
+input[type="email"] {
+    padding: 15px;
+    background-color: aliceblue;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: azure;
+    color: rgb(25, 6, 172);
+    text-size-adjust: 1rem;
+    width: 300px; /* Pakeisk plotį pagal poreikį */
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #0e2fc3;
+    color: white;
+    cursor: pointer;
+
+
+
+}
+
+/* priedas prie kodo */
+
+header {
+  /* ... jūsų esamas header stilius ... */
+  opacity: 0; /* Pradinė nepermatomumas */
+  transform: translateY(50px); /* Pradinis poslinkis žemyn */
+  animation: fadeInUp 1s ease-in-out forwards; /* Animacijos taikymas */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* trys stulpeliai nauji */
+
+
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
+  }
+  
+
+  .containeris {
+    display: flex;
+    flex-direction: row; /* Išdėstyti horizontaliai */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
+  }
+  
+  .Stulpelis {
+    width: 30%;
+    padding: 20px;
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Pridėta animacija */
+  }
+  
+  .Stulpelis:hover {
+    transform: translateY(-20px); /* Pakėlimas pele užvedus */
+  }
+
+  .Stulpelis p:hover {
+    color: rgb(241, 7, 191);
+  }
+
+  .Stulpelis h2 {
+    /* color: #002366; */
+    font-weight: bold;
+    color: #333; /* Teksto spalva */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Šešėlio efektas */
+  font-size: 2rem; /* Šrifto dydis */
+  font-family: Arial, sans-serif; /* Šriftas */
+  text-align: center; /* Teksto išlygiavimas */
+  }
+  
+  @keyframes glow {
+    0% {
+      color: rgba(0, 35, 102, 0);
+    }
+    100% {
+      color: #002366;
+    }
+  }
+
+
+
+  p {
+    color: #002366;
+  }
+
+  .Stulpelis p {
+    color: #1118e5;
+    animation: fadeIn 1s ease-in-out; /* Pridėta išblėsimo animacija */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  .Stulpelis h2:hover {
+    transform: scale(1.05); /* Padidinimas */
+    color: #5d96e0; /* Spalvos keitimas */
+}
+
+
+
+
+
+
+
+
+
+/* stulpeliai ir foto */
+
+.containerr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Užima visą ekrano aukštį */
+}
+
+.roww {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0px;
+    
+}
+
+
+
+
+
+.columnn {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    /* width: 50%; */
+    transition: background-color 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    background-color: #fff; /* Nustatome pradinę fono spalvą (balta) */
+    
+}
+
+.columnn h2 {
+  color: #072c71;
+  margin: 10px; 
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 60px;
+  width: 80%; */
+  text-align: center; 
+  margin-bottom: 20px; /* Sukuriame tarpą tarp h2 ir p */
+}
+
+.columnn p {
+  color: #333;
+  margin: 10px 0 ;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 60px;
+width: 80%; */
+text-align: center; 
+}
+
+/* .columnn h2,
+.columnn p {
+  text-align: center; /* Išcentrina tekstą viduje elemento */
+  /* margin: 10px 0; */
+  
+} 
+
+
+.columnnn {
+    flex: 1;
+    padding: 20px;
+    display: flex; 
+    width: auto;
+    padding: 20px;
+    /* text-align: center; */
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    background-color: #fff; /* Nustatome pradinę fono spalvą (balta) */
+}
+img {
+    
+  
+  /* display: flex; */
+  /* flex: 1; */
+  /* flex-direction: column; */
+  /* padding: 20px; */
+  
+      transition: transform 0.3s ease-in-out;
+      /* max-width: 80%;  */
+  height: auto; 
+  margin: 0 auto; 
+}
+
+img:hover {
+  transform: scale(1);
+}
+
+
+.columnn:hover   {
+    background-color: #c3c6cd83;
+    -moz-text-decoration-color: #9a9bbd2d;
+    color: #e20d0d;
+    border: 4px solid #e0da33;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pridėtas lengvas šešėlis */
+    width: 50%;
+  }
+
+
+  
+
+/* Animacijos slinkimui */
+.roww {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.containerr .roww:nth-child(1) {
+    animation: slideInUp 0.5s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+.containerr .roww:nth-child(2) {
+    animation: slideInUp 0.5s ease-in-out forwards;
+    animation-delay: 0.4s;
+}
+
+.containerr .roww:nth-child(3) {
+    animation: slideInUp 0.5s ease-in-out forwards;
+    animation-delay: 0.6s;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* atsiliepimai ir nuotraukytes */
+
+/* CSS */
+.conteineriukas {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    background: #f4efeff0;
+    display: flex;
+    align-items: center;
+    min-height: 40vh; /* Užima visą ekrano aukštį */
+    width: 98%;
+}
+
+
+
+
+
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between; Elementai bus išdėstyti tolygiai
+}
+
+.testimonial {
+    display: flex ;
+    flex-direction: column;  
+    text-align: center;
+    position: relative; /* Important for absolute positioning of the glow effect */
+    /* justify-content: space-between; */
+}
+
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth hover effect */
+    /* justify-content: space-between; */
+}
+
+/* iterpiam */
+
+
+.testimonial img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+  }
+  
+  .testimonial img::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 100%;
+    background-color: rgba(41, 160, 35, 0.2); /* Light glow color */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .testimonial img:hover::after {
+    opacity: 1; /* Show the glow on hover */
+  }
+
+
+/* iterpiam */
+.testimonial h3 {
+  padding: 10px;
+    margin-top: 30px;
+    max-width: 100px; /* Pakeiskite vertę pagal poreikį */
+    margin: 0 auto; /* Centruoja tekstą konteineryje */
+}
+
+
+.conteineriukas h2 {
+  padding: 24px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #1e0d89;
+    max-width: 50%;
+  margin: 0 auto;
+  justify-content: space-between
+    /* max-width: 100px; Pakeiskite vertę pagal poreikį */
+    /* margin: 0 auto; Centruoja tekstą konteineryje */
+}
+
+/* juros paveiksliukas */
+header {
+    background-image: url('jura.jpg');
+    background-size: cover;
+    background-position: center;
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.sign-in {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem; /* Pakeisk dydį pagal poreikį */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Pridėtas šešėlis */
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    /* background-image: url('jura.jpg'); */
+}
+
+input[type="email"] {
+    padding: 15px;
+    background-color: aliceblue;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: azure;
+    color: rgb(25, 6, 172);
+    text-size-adjust: 1rem;
+    width: 300px; /* Pakeisk plotį pagal poreikį */
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #0e2fc3;
+    color: white;
+    cursor: pointer;
+
+
+
+}
+/* pabaiga */
+
+/* styles.css */
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    box-shadow: none;
+  }
+  
+  a {
+    text-decoration: none;
+    box-shadow: none;
+    text-shadow: none;
+    background-color:#ffffff;
+    box-shadow: none;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+ 
+  }
+  
+  nav li {
+    margin: 0 0px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(20, 12, 236);
+    box-shadow: none;
+  }
+  
+ 
+
+  nav li:not(:last-child)::after {
+    content: "·";
+    color: rgb(20, 12, 236);
+    margin: 0 5px;
+    box-shadow: none;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: rgb(20, 12, 236);
+  }
+  
+  .copyright {
+    text-align: left;
+    color: #333;
+    font-size: small;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+.showcase {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.showcase img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/* .main-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .main-container {
+      width: 95%;
+    }
+  } */
+
+  /* @media (max-width: 320px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      width: 90%;
+    }
+    .image {
+      width: 100%;
+    }
+    .nav {
+      flex-direction: column; /* Jei meniu yra horizontalus, padaryti jį vertikaliu */
+    /* } */
+  /* } * */
+
+  @media (max-width: 320px) {
+    /* Header */
+    header {
+      padding: 50px 20px; /* Reduce padding for smaller screens */
+    }
+  
+    /* Navigation */
+    nav {
+      flex-direction: column; /* Make navigation vertical on smaller screens */
+      text-align: center; 
+    }
+  
+    /* Features section */
+    .features {
+      flex-direction: column; /* Make features vertical on smaller screens */
+    }
+  
+    .Stulpelis {
+      width: 100%; /* Make columns full width on smaller screens */
+      margin-bottom: 20px; 
+    }
+  
+    /* Testimonials section */
+    .testimonials {
+      flex-direction: column; /* Make testimonials vertical on smaller screens */
+      align-items: center; 
+    }
+  
+    .testimonial {
+      margin-bottom: 20px;
+    }
+  
+    /* General adjustments */
+    h1 {
+      font-size: 2rem; /* Reduce font size */
+    }
+  
+    p {
+      font-size: 1rem; /* Reduce font size */
+    }
+  }
