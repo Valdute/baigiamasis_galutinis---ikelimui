@@ -667,11 +667,21 @@ footer {
 
 
 @media (max-width: 320px) {
-  body {
+  .body {
     max-width: 95%;
     flex-direction: column;
   }
+
+  .conteineriukas {
+    flex-direction: column; /* Mobiliuose įrenginiuose paveikslėliai vertikaliai */
+  }
+  .conteineriukas {
+    grid-template-columns: 1fr; /* Mobiliuose įrenginiuose viena kolona */
+  }
+
 }
+
+
 
 
 
