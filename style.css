@@ -315,7 +315,7 @@ img:hover {
 
 .columnn:hover   {
     background-color: #c3c6cd83;
-    -moz-text-decoration-color: #9a9bbd2d;
+    /* -moz-text-decoration-color: #9a9bbd2d; */
     color: #e20d0d;
     border: 4px solid #e0da33;
     border-radius: 5px;
@@ -623,44 +623,55 @@ footer {
     /* } */
   /* } * */
 
-  @media (max-width: 320px) {
+  /* @media (max-width: 320px) {
     /* Header */
-    header {
-      padding: 50px 20px; /* Reduce padding for smaller screens */
-    }
+    /* header { */
+      /* padding: 50px 20px; Reduce padding for smaller screens */
+    /* }  */
   
     /* Navigation */
-    nav {
+    /* nav {
       flex-direction: column; /* Make navigation vertical on smaller screens */
-      text-align: center; 
-    }
+      /* text-align: center; 
+    /* } */  
   
     /* Features section */
-    .features {
-      flex-direction: column; /* Make features vertical on smaller screens */
-    }
+    /* .features { */
+      /* flex-direction: column; Make features vertical on smaller screens */
+    /* } */
   
-    .Stulpelis {
+    /* .Stulpelis {
       width: 100%; /* Make columns full width on smaller screens */
-      margin-bottom: 20px; 
-    }
+      /* margin-bottom: 20px;  */
+    /* } */
   
     /* Testimonials section */
-    .testimonials {
-      flex-direction: column; /* Make testimonials vertical on smaller screens */
-      align-items: center; 
-    }
+    /* .testimonials { */
+      /* flex-direction: column; Make testimonials vertical on smaller screens */
+      /* align-items: center;  */
+    /* } */
   
-    .testimonial {
-      margin-bottom: 20px;
-    }
+    /* .testimonial { */
+      /* margin-bottom: 20px; */
+    /* } */
   
     /* General adjustments */
-    h1 {
+    /* h1 {
       font-size: 2rem; /* Reduce font size */
-    }
+    /* } */
   
-    p {
-      font-size: 1rem; /* Reduce font size */
-    }
+    /* p { */
+      /* font-size: 1rem; Reduce font size */
+    /* } */
+  /* } */ 
+
+
+@media (max-width: 320px) {
+  body {
+    max-width: 95%;
+    flex-direction: column;
   }
+}
+
+
+
