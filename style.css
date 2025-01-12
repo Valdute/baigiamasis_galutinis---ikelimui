@@ -669,18 +669,39 @@ footer {
 @media (max-width: 320px) {
   .body {
     max-width: 95%;
+    display: flex;
     flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+    .conteineriukas {
+      grid-template-columns: 1fr; /* Mobiliuose įrenginiuose viena kolona */
+    }
+
+    .columnnn {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+    }
+
+    .columnn {
+      display: flex;
+      flex-direction: column; 
+      grid-template-columns: 1fr;
+    }
+    .containeris {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+    }
+
+    .roww {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+    }
   }
 
-  .conteineriukas {
-    flex-direction: column; /* Mobiliuose įrenginiuose paveikslėliai vertikaliai */
-  }
-  .conteineriukas {
-    grid-template-columns: 1fr; /* Mobiliuose įrenginiuose viena kolona */
-  }
-
-}
-
+  
 
 
 
